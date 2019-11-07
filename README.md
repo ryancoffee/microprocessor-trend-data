@@ -1,4 +1,5 @@
 # Microprocessor Trend Data
+Altered now by Ryan Coffee November 7 2019
 
 This repository contains the raw data used in my blog series on microprocessor trend data:
 

@@ -1,0 +1,279 @@
+
+
+*******************************************************************************
+Thu Nov  7 10:41:52 2019
+
+
+FIT:    data read from 'transistors.dat' u ($1-1970):(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*x + b
+fitted parameters initialized with current variable values
+
+Warning: Initial value of parameter 'b' is zero.
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.1569271015e+02   0.00e+00  9.48e+00    4.000000e-01   1.000000e-30
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Thu Nov  7 10:42:01 2019
+
+
+FIT:    data read from 'transistors.dat' u ($1-1970):(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 2.7368597520e+01   0.00e+00  1.13e+01    3.380043e-01
+   1 2.7368597520e+01  -2.60e-11  1.13e+00    3.380043e-01
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 27.3686
+rel. change during last iteration : -2.5962e-16
+
+degrees of freedom    (FIT_NDF)                        : 89
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.554538
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.307512
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.338004         +/- 0.001745     (0.5161%)
+
+
+*******************************************************************************
+Thu Nov  7 10:42:44 2019
+
+
+FIT:    data read from 'transistors.dat' u 1:(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*(x-x0) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 7.2397974585e+01   0.00e+00  1.20e+01    3.380043e-01
+   3 3.4217640415e+01  -1.66e-07  1.20e-02    3.196169e-01
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 34.2176
+rel. change during last iteration : -1.6631e-12
+
+degrees of freedom    (FIT_NDF)                        : 89
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.620055
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.384468
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.319617         +/- 0.001845     (0.5773%)
+
+
+*******************************************************************************
+Thu Nov  7 10:42:54 2019
+
+
+FIT:    data read from 'transistors.dat' u 1:(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*(x-x0) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x0           
+   0 3.4217640415e+01   0.00e+00  4.45e+02    3.196169e-01   1.968000e+03
+   5 2.6291874035e+01  -3.12e-04  4.45e-03    3.486544e-01   1.971070e+03
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 26.2919
+rel. change during last iteration : -3.12425e-09
+
+degrees of freedom    (FIT_NDF)                        : 88
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.5466
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.298771
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.348654         +/- 0.005868     (1.683%)
+x0              = 1971.07          +/- 0.5467       (0.02774%)
+
+correlation matrix of the fit parameters:
+                a      x0     
+a               1.000 
+x0              0.953  1.000 
+
+
+*******************************************************************************
+Thu Nov  7 10:43:00 2019
+
+
+FIT:    data read from 'transistors.dat' u 1:(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*(x-x0) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x0           
+   0 2.6291874035e+01   0.00e+00  4.86e+02    3.486544e-01   1.971070e+03
+   1 2.6291874035e+01   0.00e+00  4.86e+04    3.486544e-01   1.971070e+03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 26.2919
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 88
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.5466
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.298771
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.348654         +/- 0.005868     (1.683%)
+x0              = 1971.07          +/- 0.5467       (0.02774%)
+
+correlation matrix of the fit parameters:
+                a      x0     
+a               1.000 
+x0              0.953  1.000 
+
+
+*******************************************************************************
+Thu Nov  7 10:46:51 2019
+
+
+FIT:    data read from 'transistors.dat' u 1:(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*(x-x0) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x0            b            
+   0 2.6291874035e+01   0.00e+00  3.97e+02    3.486544e-01   1.971070e+03   1.001000e-30
+BREAK: Singular matrix in Invert_RtR
+
+*******************************************************************************
+Thu Nov  7 10:47:00 2019
+
+
+FIT:    data read from 'transistors.dat' u 1:(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*(x-x0) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x0            b            
+   0 2.7191874035e+01   0.00e+00  3.97e+02    3.486544e-01   1.971070e+03   1.000000e-01
+   2 2.6291874037e+01  -4.67e-02  3.97e+00    3.486539e-01   1.971357e+03   1.000000e-01
+
+After 2 iterations the fit converged.
+final sum of squares of residuals : 26.2919
+rel. change during last iteration : -4.66828e-07
+
+degrees of freedom    (FIT_NDF)                        : 87
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.549732
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.302205
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.348654         +/- 0.007542     (2.163%)
+x0              = 1971.36          +/- 3.299e+10    (1.673e+09%)
+b               = 0.1              +/- 1.15e+10     (1.15e+13%)
+
+correlation matrix of the fit parameters:
+                a      x0     b      
+a               1.000 
+x0             -0.623  1.000 
+b              -0.623  1.000  1.000 
+
+
+*******************************************************************************
+Thu Nov  7 10:47:19 2019
+
+
+FIT:    data read from 'transistors.dat' u 1:(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*(x-x0) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   x0            b            
+   0 2.6291874037e+01   0.00e+00  4.86e+02    1.971357e+03   1.000000e-01
+   1 2.6291874037e+01  -8.11e-11  4.86e+01    1.971357e+03   1.000000e-01
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 26.2919
+rel. change during last iteration : -8.10756e-16
+
+degrees of freedom    (FIT_NDF)                        : 88
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.5466
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.298771
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+x0              = 1971.36          +/- 2.57e+10     (1.304e+09%)
+b               = 0.1              +/- 8.96e+09     (8.96e+12%)
+
+correlation matrix of the fit parameters:
+                x0     b      
+x0              1.000 
+b               1.000  1.000 
+
+
+*******************************************************************************
+Thu Nov  7 10:47:24 2019
+
+
+FIT:    data read from 'transistors.dat' u 1:(log($2))
+        format = x:z
+        #datapoints = 90
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = a*(x-x0) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             x0            b            
+   0 2.6291874037e+01   0.00e+00  3.97e+02    3.486539e-01   1.971357e+03   1.000000e-01
+   1 2.6291874037e+01  -9.83e-08  3.97e+01    3.486539e-01   1.971357e+03   1.000000e-01
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 26.2919
+rel. change during last iteration : -9.83041e-13
+
+degrees of freedom    (FIT_NDF)                        : 87
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.549732
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.302205
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.348654         +/- 0.008096     (2.322%)
+x0              = 1971.36          +/- 7.147e+10    (3.625e+09%)
+b               = 0.1              +/- 2.492e+10    (2.492e+13%)
+
+correlation matrix of the fit parameters:
+                a      x0     b      
+a               1.000 
+x0              0.685  1.000 
+b               0.685  1.000  1.000 
