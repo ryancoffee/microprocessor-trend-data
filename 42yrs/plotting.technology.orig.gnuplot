@@ -175,9 +175,9 @@ trans(b,x) = b*exp(a*(x-x0))
 GNUTERM = "qt"
 ## Last datafile plotted: "specint.dat"
 set xrange [1970:2030]
-set yrange [1e3:1e14]
-set y2range [.1:1e10]
-set term png size 800,1000
+set yrange [1e3:1e12]
+set y2range [.1:1e8]
+set term png size 1200,1200
 set output 'plotting.technology.png'
 #set term post color eps size 4in,6in
 #s#et output 'plotting_technology.eps'
@@ -189,36 +189,33 @@ set lmargin screen .15
 set origin 0,.375
 set xlabel 'year'
 set ylabel 'Num. transistors' offset 1,0
-set y2label "Num. cores \\&\nperformance" offset -2,0
-set label 20 "Next\nInnovation\nCatalyst" center at 2023,1e9 font 'Times,18' 
+set y2label 'Num. cores \& SPECint x 10' offset -2,0
 #set label 1 right at 2009,2e10 '100s of atoms'
 #set label 2 right at 2014,1e11 "10s of\natoms"
 #set arrow 1 nohead filled from 2015,8e10 to 2021,8e10 front
-set arrow 10 nohead from 2023,3e9 to 2023,3e10 lw 4 lc rgb 'red'
-set arrow 20 nohead from 2023,3e11 to 2023,3e13 lw 4 lc rgb 'red'
+set arrow 10 nohead from 2023,3e9 to 2023,3e10 lw 2
+set arrow 20 nohead from 2023,3e5 to 2023,5e8 lw 2
 #set arrow 2 head filled from 2010,2e10 to 2015,2e10
-plot 'transistors.dat' u 1:($2*1e3) pt 7 title 'transistors', 'cores.dat' axes x1y2 pt 6 lw 2 title 'cores','specint.dat' u 1:($2*1e3) axes x1y2 pt 7 lc rgb 'blue' title 'performance per thread',\
-	'cores.dat' u 1:($2*1.5e7>7e7 ? $2*1.5e7 : 0./0) axes x1y2 pt 4 lw 2 lc rgb 'blue' title 'performance total'
-unset label 20
-replot [2019:2023] trans(1e3,x) lw 2 lt 1 notitle 
-replot [2023:2028] trans(1e3,2023) lw 2 lt 1 notitle
-#replot [2019:2028] trans(1.5e1,x) lw 2 lt 3 notitle
+plot 'transistors.dat' u 1:($2*1e3) pt 7 title 'transistors', 'cores.dat' axes x1y2 pt 6 lw 2 title 'cores','specint.dat' u 1:($2*1e-3*10) axes x1y2 pt 7 title 'thread performance',\
+	'cores.dat' u 1:($1>2006 ? $2*1.5e2 : 0./0) axes x1y2 pt 9 lw 2 lc 3 title 'cores x perf. / core'
+replot [2019:2028] trans(1e3,x) lw 2 lt 1 notitle
+replot [2019:2028] trans(1.5e1,x) lw 2 lt 3 notitle
 set size 1,.375
 set origin 0,0
 set ylabel 'frequency [GHz]' offset 1,0
 set y2label 'power [W]' offset -1,0
 set yrange [1e-4:1e1]
 set y2range [.1:1e4]
-set arrow 3 nohead filled from screen .535,.35 to screen .535,.475 lw 4 lc rgb 'red'
-set arrow 4 nohead filled from screen .535,.1 to screen .535,.2 lw 4 lc rgb 'red'
-set label 4 center at screen .535,.085 "Innovation Catalyst" font 'Times,18'
+set arrow 3 nohead filled from screen .535,.35 to screen .535,.475 lw 2
+set arrow 4 nohead filled from screen .535,.1 to screen .535,.2 lw 2
+set label 4 center at screen .535,.085 "Catalyst"
 unset label 1
 unset label 2
 unset arrow 1
 unset arrow 2
 unset arrow 10
 unset arrow 20
-plot 'frequency.dat' u 1:($2*1e-3) pt 7 title 'clock frequency', 'watts.dat' axes x1y2 pt 6 lw 2 title 'power consumption'
+plot 'frequency.dat' u 1:($2*1e-3) pt 7 title 'clock', 'watts.dat' axes x1y2 pt 6 lw 2 title 'power'
 unset multiplot
 #    EOF
 #
