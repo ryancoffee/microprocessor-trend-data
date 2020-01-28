@@ -191,6 +191,7 @@ set xlabel 'year'
 set ylabel 'Num. transistors' offset 1,0
 set y2label "Num. cores \\&\nperformance" offset -2,0
 set label 20 "Next\nInnovation\nCatalyst" center at 2023,1e9 font 'Times,18' 
+set label 30 "Exponential growth" center at 1990,1e7 font 'Times,18' rotate by 40
 #set label 1 right at 2009,2e10 '100s of atoms'
 #set label 2 right at 2014,1e11 "10s of\natoms"
 #set arrow 1 nohead filled from 2015,8e10 to 2021,8e10 front
@@ -200,6 +201,7 @@ set arrow 20 nohead from 2023,3e11 to 2023,3e13 lw 4 lc rgb 'red'
 plot 'transistors.dat' u 1:($2*1e3) pt 7 title 'transistors', 'cores.dat' axes x1y2 pt 6 lw 2 title 'cores','specint.dat' u 1:($2*1e3) axes x1y2 pt 7 lc rgb 'blue' title 'performance per thread',\
 	'cores.dat' u 1:($2*1.5e7>7e7 ? $2*1.5e7 : 0./0) axes x1y2 pt 4 lw 2 lc rgb 'blue' title 'performance total'
 unset label 20
+unset label 30
 replot [2019:2023] trans(1e3,x) lw 2 lt 1 notitle 
 replot [2023:2028] trans(1e3,2023) lw 2 lt 1 notitle
 #replot [2019:2028] trans(1.5e1,x) lw 2 lt 3 notitle
